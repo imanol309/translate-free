@@ -17,13 +17,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="h-screen">
+      <body className={`${inter.className} h-full w-full`}>
         <section className="flex flex-col justify-center w-full h-full">
           <Header />
-          <section className="w-full h-max flex justify-center items-center">
+          <section className="relative w-full h-full flex justify-center items-center">
             <NavBar />
-            <section className="w-4/5">{children}</section>
+            <section className="w-[83%]">{children}</section>
           </section>
         </section>
       </body>
