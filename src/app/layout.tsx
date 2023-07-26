@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "@/components/Header/Header"; 
+import Header from "@/components/Header/Header";
 import NavBar from "@/components/NavBar/NavBar";
 import { ClerkProvider } from "@clerk/nextjs";
 
@@ -20,14 +20,8 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" className="h-screen">
-        <body className={`${inter.className} h-full w-full`}>
-          <section className="flex flex-col justify-center w-full h-full">
-            <Header />
-            <section className="relative w-full h-full flex justify-center items-center">
-              <NavBar />
-              <section className="w-[83%]">{children}</section>
-            </section>
-          </section>
+        <body className={`${inter.className} h-full w-full flex justify-center items-center`}>
+          {children}
         </body>
       </html>
     </ClerkProvider>
