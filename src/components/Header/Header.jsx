@@ -1,3 +1,5 @@
+import BtnClark from "@/components/btnClark/btnClark";
+
 export default function NavBar() {
   return (
     <main className="h-28 flex items-center justify-between w-full border-b border-gray-800">
@@ -7,7 +9,9 @@ export default function NavBar() {
           <span className="text-lg text-gray-500 font-light">Translate</span>
         </h4>
       </section>
-      <section className="mx-10">Iniciar Seccion</section>
+      <section className="flex items-center justify-center gap-1 mx-10">
+        <BtnClark />
+      </section>
     </main>
   );
 }
