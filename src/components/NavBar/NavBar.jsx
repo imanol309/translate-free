@@ -1,6 +1,6 @@
 import Image from "next/image";
 import headset from "@/assets/icons/headset-solid.svg";
-import Link from 'next/link'
+import Link from "next/link";
 import { listNavBar } from "@/utils/ListNavbar";
 
 export default function NavBar() {
@@ -8,10 +8,10 @@ export default function NavBar() {
     <main className="flex flex-col w-[17%] h-full border-r border-gray-800">
       <section className="w-full h-[90%] flex flex-col gap-6 justify-start items-center py-10">
         {listNavBar?.map((list) => (
-          <Link 
+          <Link
             key={list.id}
             href={list.url}
-            className="w-[70%] flex items-center justify-start gap-4 hover:bg-[#346aff] py-4 pl-5 cursor-pointer rounded-full hover:text-white text-gray-500"
+            className="w-[70%] font-medium flex items-center justify-start gap-4 hover:bg-green-600 py-4 pl-5 cursor-pointer rounded-full hover:text-white text-gray-500"
           >
             <Image src={list.icon} alt="" height={18} width={18} />
             <h3 className="  font-medium text-lg">{list.name}</h3>
