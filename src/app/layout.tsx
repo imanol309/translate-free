@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,12 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" className="h-screen">
-        <body className={`${inter.className} h-full w-full flex justify-center items-center`}>
+        {/* <Head>
+          <link rel="shortcut icon" href="/src/app/favicon.ico" sizes="any"  />
+        </Head> */}
+        <body
+          className={`${inter.className} h-full w-full flex justify-center items-center`}
+        >
           {children}
         </body>
       </html>
