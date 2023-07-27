@@ -7,7 +7,7 @@ function Structure({ children }: { children: React.ReactNode }) {
       <Header />
       <section className="relative w-full h-full flex justify-center items-center">
         <NavBar />
-        <section className="w-[83%]">{children}</section>
+        <section className="w-[83%] h-full">{children}</section>
       </section>
     </section>
   );
