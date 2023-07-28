@@ -1,4 +1,4 @@
-import BtnClark from "@/components/btnClark/btnClark";
+import BtnClark from "@/components/BtnClark/BtnClark";
 
 export default function NavBar() {
   return (
