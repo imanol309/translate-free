@@ -4,7 +4,7 @@ import { UserButton, useUser } from "@clerk/nextjs";
 import Link from "next/link";
 import { dark } from '@clerk/themes';
 
-function BtnClark() {
+function Btnclark() {
   const { isSignedIn } = useUser();
   if (!isSignedIn) {
     return (
@@ -26,4 +26,4 @@ function BtnClark() {
   );
 }
 
-export default BtnClark;
+export default Btnclark;
