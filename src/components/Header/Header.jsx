@@ -1,4 +1,3 @@
-import BtnClark from "@/components/Btnclark/Btnclark";
 
 export default function NavBar() {
   return (
@@ -10,7 +9,6 @@ export default function NavBar() {
         </h4>
       </section>
       <section className="flex items-center justify-center gap-1 mx-10">
-        <BtnClark />
       </section>
     </main>
   );
